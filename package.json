@@ -1,0 +1,16 @@
+{
+  "name": "my-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot",
+  "main": "src/bot.js",
+  "scripts": {
+    "start": "node src/bot.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "winston": "^3.15.0"
+  },
+  "author": "lexa2005",
+  "license": "GPL-3.0-or-later"
+}
