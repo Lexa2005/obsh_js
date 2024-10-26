@@ -9,7 +9,7 @@ function messageHandler(bot, blacklist) {
         const currentTime = Date.now() / 1000;
         const user = msg.from;
 
-        // Проверка, что сообщение отправлено лично боту, а не в группу
+        // Проверка, что сообщение отправлено лично боту, а не в канал
         if (msg.chat.type !== 'private') {
             return;
         }
@@ -40,7 +40,7 @@ function messageHandler(bot, blacklist) {
         // Замена ссылок на "ссылка удалена"
         let messageText = msg.text ? replaceLinks(msg.text) : '';
 
-        // Отправка сообщения в группу
+        // Отправка сообщения в канал
         const sendMessage = async () => {
             try {
                 const channelId = process.env.TG_CHANNEL;
@@ -64,6 +64,9 @@ function messageHandler(bot, blacklist) {
                 } else if (msg.text) {
                     await bot.sendMessage(channelId, messageText);
                     logger.info(`${user.first_name} ${user.last_name} (@${user.username}) написал сообщение в ${new Date().toISOString()} (ID: ${user.id})`);
+                } else if (msg.sticker) {
+                    await bot.sendSticker(channelId, msg.sticker.file_id);
+                    logger.info(`${user.first_name} ${user.last_name} (@${user.username}) отправил стикер в ${new Date().toISOString()} (ID: ${user.id})`);
                 }
 
                 lastMessageTime = currentTime;

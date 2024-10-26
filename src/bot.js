@@ -32,8 +32,5 @@ bot.on('polling_error', (error) => {
 // Дополнительные логи для отладки
 bot.on('message', (msg) => {
     logger.info(`Получено сообщение от пользователя ${msg.from.username} (ID: ${msg.from.id}): ${msg.text}`);
-});
-
-bot.on('polling_error', (error) => {
-    logger.error(`Ошибка при запуске бота: ${error.code} - ${error.message}`);
+    logger.info(`Тип чата: ${msg.chat.type}, ID чата: ${msg.chat.id}`);
 });
