@@ -11,9 +11,9 @@
 
 ## Установка
 
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Lexa2005/obsh_js
    
-   cd your-repository
+   cd obsh_js/
 
    Установки зависимостей:
    
@@ -23,8 +23,8 @@
 
    Создайте файл .env в корне проекта и добавьте в него необходимые переменные окружения:
 
-   TELEGRAM_BOT_TOKEN=your-telegram-bot-token
-   TG_CHANNEL=your-channel-id
+   TELEGRAM_BOT_TOKEN=*your-telegram-bot-token*
+   TG_CHANNEL=*your-channel-id*
 
    Замените your-telegram-bot-token и your-channel-id на соответствующие значения.
 
