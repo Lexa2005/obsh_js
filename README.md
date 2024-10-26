@@ -11,20 +11,20 @@
 
 ## Установка
 
-   git clone https://github.com/Lexa2005/obsh_js
+   **git clone https://github.com/Lexa2005/obsh_js**
    
-   cd obsh_js/
+   **cd obsh_js/**
 
    Установки зависимостей:
    
-   npm install
+   **npm install**
 
 ## Настройка переменных окружения:
 
    Создайте файл .env в корне проекта и добавьте в него необходимые переменные окружения:
 
-   TELEGRAM_BOT_TOKEN=*your-telegram-bot-token*
-   TG_CHANNEL=*your-channel-id*
+   **TELEGRAM_BOT_TOKEN=your-telegram-bot-token**
+   **TG_CHANNEL=your-channel-id**
 
    Замените your-telegram-bot-token и your-channel-id на соответствующие значения.
 
@@ -32,33 +32,33 @@
 
 Запустите бота с помощью команды:
 
-npm start
+**npm start**
 
 ## Конфигурация
 
 В файле config.js вы можете настроить различные параметры бота:
 
 module.exports = {
-   
-COOLDOWN_TIME: 30, // КД (в секундах)
 
-ALLOW_TEXT: true, // ТЕКСТ
+**COOLDOWN_TIME: 30, // КД (в секундах)**
 
-ALLOW_PHOTO: true, // ФОТО
+**ALLOW_TEXT: true, // ТЕКСТ**
 
-ALLOW_VIDEO: true, // ВИДЕО
+**ALLOW_PHOTO: true, // ФОТО**
 
-ALLOW_AUDIO: true, // АУДИО
+**ALLOW_VIDEO: true, // ВИДЕО**
 
-ALLOW_VOICE: true, // ГОЛОСОВЫЕ СООБЩЕНИЯ
+**ALLOW_AUDIO: true, // АУДИО**
 
-ALLOW_VIDEO_NOTE: true, // КРУЖКИ
+**ALLOW_VOICE: true, // ГОЛОСОВЫЕ СООБЩЕНИЯ**
 
-ALLOW_STICKER: true, // СТИКЕРЫ
+**ALLOW_VIDEO_NOTE: true, // КРУЖКИ**
 
-ALLOW_GIF: true, // ГИФКИ
+**ALLOW_STICKER: true, // СТИКЕРЫ**
 
-MAX_MESSAGE_LENGTH: 200, // Максимальное количество символов в сообщении
+**ALLOW_GIF: true, // ГИФКИ**
+
+**MAX_MESSAGE_LENGTH: 200, // Максимальное количество символов в сообщении**
 
 };
 
