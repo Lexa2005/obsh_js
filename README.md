@@ -39,6 +39,7 @@ npm start
 В файле config.js вы можете настроить различные параметры бота:
 
 module.exports = {
+   
 COOLDOWN_TIME: 30, // КД (в секундах)
 
 ALLOW_TEXT: true, // ТЕКСТ
@@ -58,6 +59,7 @@ ALLOW_STICKER: true, // СТИКЕРЫ
 ALLOW_GIF: true, // ГИФКИ
 
 MAX_MESSAGE_LENGTH: 200, // Максимальное количество символов в сообщении
+
 };
 
 ## Логирование
