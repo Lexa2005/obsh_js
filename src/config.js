@@ -1,4 +1,5 @@
 module.exports = {
+    MAX_MESSAGE_LENGTH: 200, // Максимальное количество символов в сообщении
     COOLDOWN_TIME: 30, // КД (в секундах)
     ALLOW_TEXT: true, // ТЕКСТ
     ALLOW_PHOTO: true, // ФОТО

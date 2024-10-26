@@ -27,8 +27,8 @@ function messageHandler(bot, blacklist) {
             return;
         }
 
-        if (msg.text && msg.text.length > 200) {
-            bot.sendMessage(msg.chat.id, 'Сообщение превышает 200 символов и не может быть отправлено.');
+        if (msg.text && msg.text.length > config.MAX_MESSAGE_LENGTH) {
+            bot.sendMessage(msg.chat.id, `Сообщение превышает ${config.MAX_MESSAGE_LENGTH} символов и не может быть отправлено.`);
             return;
         }
 
