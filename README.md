@@ -12,20 +12,21 @@
 ## Установка
 
    git clone https://github.com/your-username/your-repository.git
+   
    cd your-repository
 
-    Установка зависимостей:
-
-    npm install
+   Установки зависимостей:
+   
+   npm install
 
 ## Настройка переменных окружения:
 
-    Создайте файл .env в корне проекта и добавьте в него необходимые переменные окружения:
+   Создайте файл .env в корне проекта и добавьте в него необходимые переменные окружения:
 
-      TELEGRAM_BOT_TOKEN=your-telegram-bot-token
-      TG_CHANNEL=your-channel-id
+   TELEGRAM_BOT_TOKEN=your-telegram-bot-token
+   TG_CHANNEL=your-channel-id
 
-    Замените your-telegram-bot-token и your-channel-id на соответствующие значения.
+   Замените your-telegram-bot-token и your-channel-id на соответствующие значения.
 
 ## Запуск
 
